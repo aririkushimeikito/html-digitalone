@@ -309,6 +309,7 @@ strong{color:var(--navy-ink)}
 /* Star ticker under hero headline */
 .trust-line{display:flex;align-items:center;gap:.8rem;margin-top:2.2rem;font-size:.9rem}
 .trust-line .stars{color:#F5B301;letter-spacing:3px}
+.hero-trust .stars{color:#F5B301;letter-spacing:3px}
 
 /* ---------- Cards ---------- */
 .card{
@@ -634,6 +635,9 @@ strong{color:var(--navy-ink)}
   display:inline-flex;align-items:center;justify-content:center;
   background:rgba(255,255,255,.08);color:#fff;transition:background .3s,transform .3s;
 }
+.footer-social a:has(img){background:#fff}
+.footer-social a img{width:64%;height:64%;object-fit:contain;display:block}
+.footer-social a img[alt="Facebook"]{width:100%;height:100%}
 .footer-social a:has(.fa-facebook-f){background:#1877F2}
 .footer-social a:has(.fa-linkedin-in){background:#0A66C2}
 .footer-social a:has(.fa-google){background:#EA4335}
