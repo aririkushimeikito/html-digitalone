@@ -146,17 +146,15 @@
             <h2 style="font-size:1.6rem;margin-bottom:.4rem">Send us a message</h2>
             <p style="margin-bottom:1.8rem">Fields marked <span style="color:var(--red)">*</span> are required.</p>
 
-            <form action="https://formsubmit.co/reviews@digitaloneinc.com" method="POST" novalidate="false">
+            <form action="https://api.web3forms.com/submit" method="POST" novalidate="false">
 
-              <!-- FormSubmit configuration -->
-              <input type="hidden" name="_subject" value="New inquiry from digitalonereviews.com">
-              <input type="hidden" name="_cc" value="joe@digitaloneinc.com">
-              <input type="hidden" name="_captcha" value="false">
-              <input type="hidden" name="_next" value="https://digitalonereviews.com/thank-you.html">
-              <input type="hidden" name="_autoresponse" value="Thanks for reaching out to Digital One Reviews! We've received your message and a reputation specialist will get back to you within one business day. — The Digital One Team">
-              <input type="hidden" name="_template" value="table">
+              <!-- Web3Forms configuration -->
+              <input type="hidden" name="access_key" value="42f668ea-99ff-4dd4-9990-7d4e3a6792eb">
+              <input type="hidden" name="subject" value="New inquiry from digitalonereviews.com">
+              <input type="hidden" name="from_name" value="Digital One Reviews Website">
+              <input type="hidden" name="redirect" id="w3f-redirect" value="https://digitalonereviews.com/thank-you.html">
               <!-- Honeypot spam trap -->
-              <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+              <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
 
               <div class="form-grid">
                 <div class="form-field">
@@ -293,6 +291,8 @@
   <button class="back-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
 
   <script src="js/script.js" defer></script>
+  <!-- Point the Web3Forms redirect at this site's own thank-you page, wherever it's hosted -->
+  <script>document.getElementById('w3f-redirect').value = new URL('thank-you.html', location.href).href;</script>
 <script>
   // Swap header logo color when the sticky header gains its white background
   (function(){
@@ -304,5 +304,12 @@
     new MutationObserver(swap).observe(header, {attributes:true, attributeFilter:['class']}); swap();
   })();
 </script>
+  <!-- Knock Knock Widget -->
+  <script>
+    window.company_id = '6a737e3bddfe2f5f9eb53334';
+    var newScript = document.createElement('script');
+    newScript.src = 'https://api.knock-knockapp.com/widget/widget.js';
+    document.getElementsByTagName('HEAD')[0].appendChild(newScript);
+  </script>
 </body>
 </html>
