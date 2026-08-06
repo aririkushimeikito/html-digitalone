@@ -209,9 +209,12 @@ strong{color:var(--navy-ink)}
   transition:background .25s,color .25s,transform .25s;
 }
 .social-mini a:hover{background:rgba(127,127,127,.16);transform:translateY(-2px)}
-.social-mini a img{width:19px;height:19px;object-fit:contain;display:block}
-.social-mini a i.fa-linkedin-in{color:#0A66C2}
-.site-header:not(.is-scrolled).header--onhero .social-mini a:has(.fa-linkedin-in){background:#fff}
+.social-mini a img{width:20px;height:20px;object-fit:contain;display:block}
+/* LinkedIn: real-logo look — blue rounded square with white "in" */
+.social-mini a i.fa-linkedin-in{
+  width:20px;height:20px;background:#0A66C2;border-radius:5px;color:#fff;
+  font-size:.8rem;display:inline-flex;align-items:center;justify-content:center;
+}
 
 /* Hamburger */
 .nav-toggle{
@@ -632,16 +635,19 @@ strong{color:var(--navy-ink)}
 .site-footer a:hover{color:#fff}
 .footer-contact li{display:flex;gap:.8rem;align-items:flex-start}
 .footer-contact i{color:#FF5B77;margin-top:.35rem;width:18px;text-align:center}
-.footer-social{display:flex;gap:.6rem;margin-top:1.4rem}
+.footer-social{display:flex;gap:1rem;margin-top:1.4rem;align-items:center}
 .footer-social a{
-  width:40px;height:40px;border-radius:50%;
+  width:36px;height:36px;
   display:inline-flex;align-items:center;justify-content:center;
-  background:rgba(255,255,255,.08);color:#fff;transition:background .3s,transform .3s;
+  transition:transform .3s,filter .3s;
 }
-.footer-social a{background:#fff;overflow:hidden}
-.footer-social a img{width:62%;height:62%;object-fit:contain;display:block}
-.footer-social a i{color:#0A66C2;font-size:1.05rem}
-.footer-social a:hover{transform:translateY(-3px);filter:brightness(1.05)}
+.footer-social a img{width:36px;height:36px;object-fit:contain;display:block}
+/* LinkedIn has no image asset — recreate its real logo: blue rounded square, white "in" */
+.footer-social a i{
+  width:36px;height:36px;background:#0A66C2;border-radius:8px;color:#fff;
+  font-size:1.2rem;display:inline-flex;align-items:center;justify-content:center;
+}
+.footer-social a:hover{transform:translateY(-3px);filter:brightness(1.12)}
 .footer-bottom{
   border-top:1px solid rgba(255,255,255,.08);
   padding-block:1.5rem;display:flex;flex-direction:column;gap:.7rem;
