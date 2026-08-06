@@ -208,7 +208,10 @@ strong{color:var(--navy-ink)}
   width:34px;height:34px;border-radius:50%;font-size:.85rem;color:var(--navy);
   transition:background .25s,color .25s,transform .25s;
 }
-.social-mini a:hover{background:var(--red);color:#fff;transform:translateY(-2px)}
+.social-mini a:hover{background:rgba(127,127,127,.16);transform:translateY(-2px)}
+.social-mini a img{width:19px;height:19px;object-fit:contain;display:block}
+.social-mini a i.fa-linkedin-in{color:#0A66C2}
+.site-header:not(.is-scrolled).header--onhero .social-mini a:has(.fa-linkedin-in){background:#fff}
 
 /* Hamburger */
 .nav-toggle{
@@ -635,14 +638,10 @@ strong{color:var(--navy-ink)}
   display:inline-flex;align-items:center;justify-content:center;
   background:rgba(255,255,255,.08);color:#fff;transition:background .3s,transform .3s;
 }
-.footer-social a:has(img){background:#fff}
-.footer-social a img{width:64%;height:64%;object-fit:contain;display:block}
-.footer-social a img[alt="Facebook"]{width:100%;height:100%}
-.footer-social a:has(.fa-facebook-f){background:#1877F2}
-.footer-social a:has(.fa-linkedin-in){background:#0A66C2}
-.footer-social a:has(.fa-google){background:#EA4335}
-.footer-social a:has(.fa-instagram){background:linear-gradient(45deg,#F58529,#DD2A7B,#8134AF)}
-.footer-social a:hover{transform:translateY(-3px);filter:brightness(1.12)}
+.footer-social a{background:#fff;overflow:hidden}
+.footer-social a img{width:62%;height:62%;object-fit:contain;display:block}
+.footer-social a i{color:#0A66C2;font-size:1.05rem}
+.footer-social a:hover{transform:translateY(-3px);filter:brightness(1.05)}
 .footer-bottom{
   border-top:1px solid rgba(255,255,255,.08);
   padding-block:1.5rem;display:flex;flex-direction:column;gap:.7rem;
