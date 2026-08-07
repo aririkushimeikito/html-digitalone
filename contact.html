@@ -38,8 +38,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/style.css?v=18">
-  <link rel="stylesheet" href="css/responsive.css?v=18">
+  <link rel="stylesheet" href="css/style.css?v=19">
+  <link rel="stylesheet" href="css/responsive.css?v=19">
 
   <!-- Schema.org LocalBusiness -->
   <script type="application/ld+json">
@@ -187,17 +187,16 @@
                   <input type="text" id="subject" name="Subject" required placeholder="How can we help?">
                 </div>
                 <div class="form-field">
-                  <label for="service">Service Interested In <span class="req">*</span></label>
-                  <select id="service" name="Service Interested In" required>
-                    <option value="" selected disabled>Select a service…</option>
-                    <option>Reputation Management</option>
-                    <option>Google Business Profile Audit</option>
-                    <option>Local Listings</option>
-                    <option>Web Development</option>
-                    <option>Video Production</option>
-                    <option>Social Media Management</option>
-                    <option>ReviewPro Cards / Review Stand</option>
-                  </select>
+                  <span class="group-label">Service Interested In <span class="req">*</span> <small style="font-weight:500">(select all that apply)</small></span>
+                  <div class="service-checks" id="service-checks">
+                    <label><input type="checkbox" name="Service Interested In[]" value="Reputation Management"> Reputation Management</label>
+                    <label><input type="checkbox" name="Service Interested In[]" value="Google Business Profile Audit"> Google Business Profile Audit</label>
+                    <label><input type="checkbox" name="Service Interested In[]" value="Local Listings"> Local Listings</label>
+                    <label><input type="checkbox" name="Service Interested In[]" value="Web Development"> Web Development</label>
+                    <label><input type="checkbox" name="Service Interested In[]" value="Video Production"> Video Production</label>
+                    <label><input type="checkbox" name="Service Interested In[]" value="Social Media Management"> Social Media Management</label>
+                    <label><input type="checkbox" name="Service Interested In[]" value="ReviewPro Cards / Review Stand"> ReviewPro Cards / Review Stand</label>
+                  </div>
                 </div>
                 <div class="form-field form-field--full">
                   <label for="message">Your Message <span class="req">*</span></label>
@@ -287,7 +286,23 @@
 
   <script src="js/script.js" defer></script>
   <!-- Point the Web3Forms redirect at this site's own thank-you page, wherever it's hosted -->
-  <script>document.getElementById('w3f-redirect').value = new URL('thank-you.html', location.href).href;</script>
+  <script>
+    document.getElementById('w3f-redirect').value = new URL('thank-you.html', location.href).href;
+    // Require at least one "Service Interested In" checkbox
+    (function(){
+      var form = document.querySelector('form[action*="web3forms"]');
+      var checks = Array.prototype.slice.call(document.querySelectorAll('#service-checks input[type="checkbox"]'));
+      if(!form || !checks.length) return;
+      form.addEventListener('submit', function(e){
+        if(!checks.some(function(c){return c.checked;})){
+          e.preventDefault();
+          checks[0].setCustomValidity('Please select at least one service');
+          checks[0].reportValidity();
+        }
+      });
+      checks.forEach(function(c){ c.addEventListener('change', function(){ checks[0].setCustomValidity(''); }); });
+    })();
+  </script>
 <script>
   // Swap header logo color when the sticky header gains its white background
   (function(){

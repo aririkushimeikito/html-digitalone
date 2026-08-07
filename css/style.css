@@ -538,6 +538,11 @@ strong{color:var(--navy-ink)}
 }
 .form-consent{display:flex;gap:.8rem;align-items:flex-start;font-size:.85rem;color:var(--gray-500)}
 .form-consent input{width:18px;height:18px;margin-top:.25rem;accent-color:var(--red);flex:none}
+.form-field .group-label{font-weight:700;font-size:.86rem;color:var(--navy-ink)}
+.form-field .group-label .req{color:var(--red)}
+.service-checks{display:grid;gap:.5rem;margin-top:.2rem}
+.service-checks label{display:flex;gap:.55rem;align-items:center;font-weight:500;font-size:.9rem;color:var(--gray-500);cursor:pointer}
+.service-checks input{width:17px;height:17px;accent-color:var(--red);flex:none}
 
 /* Contact page split */
 .contact-split{display:grid;grid-template-columns:.9fr 1.4fr;gap:3rem;align-items:start}
