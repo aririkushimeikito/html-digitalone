@@ -5,25 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Primary SEO -->
-  <title>Web Development | Digital One Reviews</title>
-  <meta name="description" content="Custom website design and development for restaurants and local businesses — fast, mobile-first, SSL-secured and SEO-ready. See 24 live client websites built by Digital One.">
-  <meta name="keywords" content="web development, website design, restaurant websites, local business websites, Bucks County web design">
+  <title>Restaurant Web Design & Development | Digital One Reviews</title>
+  <meta name="description" content="Fast, mobile-friendly websites for restaurants with integrated reservations and online ordering — see 24 client sites built by Digital One Reviews.">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://digitalonereviews.com/web-development.html">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Digital One Reviews">
-  <meta property="og:title" content="Web Development | Digital One Reviews">
-  <meta property="og:description" content="Custom website design and development for restaurants and local businesses — fast, mobile-first, SSL-secured and SEO-ready. See 24 live client websites built by Digital One.">
+  <meta property="og:title" content="Restaurant Web Design & Development | Digital One Reviews">
+  <meta property="og:description" content="Fast, mobile-friendly websites for restaurants with integrated reservations and online ordering — see 24 client sites built by Digital One Reviews.">
   <meta property="og:url" content="https://digitalonereviews.com/web-development.html">
   <meta property="og:image" content="https://digitalonereviews.com/images/hero/og-cover.jpg">
   <meta property="og:locale" content="en_US">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Web Development | Digital One Reviews">
-  <meta name="twitter:description" content="Custom website design and development for restaurants and local businesses — fast, mobile-first, SSL-secured and SEO-ready. See 24 live client websites built by Digital One.">
+  <meta name="twitter:title" content="Restaurant Web Design & Development | Digital One Reviews">
+  <meta name="twitter:description" content="Fast, mobile-friendly websites for restaurants with integrated reservations and online ordering — see 24 client sites built by Digital One Reviews.">
   <meta name="twitter:image" content="https://digitalonereviews.com/images/hero/og-cover.jpg">
 
   <!-- Favicon -->
@@ -41,21 +40,135 @@
   <link rel="stylesheet" href="css/style.css?v=19">
   <link rel="stylesheet" href="css/responsive.css?v=19">
 
-  <!-- Schema.org LocalBusiness -->
+  <!-- Schema.org @graph -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Digital One Reviews",
-    "description": "Reputation management, review management, local listings, web development, video production and social media management for local businesses.",
-    "url": "https://digitalonereviews.com/web-development.html",
-    "logo": "https://digitalonereviews.com/images/logo/D1-logo.png",
-    "image": "https://digitalonereviews.com/images/hero/og-cover.jpg",
-    "telephone": "+12674820275",
-    "email": "reviews@digitaloneinc.com",
-    "priceRange": "$$",
-    "areaServed": ["Hatboro PA", "Doylestown PA", "Warrington PA", "Bucks County PA", "Philadelphia PA"],
-    "sameAs": ["https://www.facebook.com/digitalonemarketingsolutions", "https://www.linkedin.com/company/digitalonereviews/", "https://www.instagram.com/digitalonereviews/", "https://maps.app.goo.gl/KN1YRk26AeGGKsuQ9"]
+    "@graph": [
+        {
+            "@type": "Organization",
+            "@id": "https://digitalonereviews.com/#organization",
+            "name": "Digital One Reviews",
+            "url": "https://digitalonereviews.com/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://digitalonereviews.com/images/logo/D1-logo.png"
+            },
+            "image": "https://digitalonereviews.com/images/hero/og-cover.jpg",
+            "telephone": "+12674820275",
+            "email": "reviews@digitaloneinc.com",
+            "foundingDate": "2017-09",
+            "founder": {
+                "@type": "Person",
+                "name": "FOUNDER_NAME_PLACEHOLDER"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Hatboro",
+                "addressRegion": "PA",
+                "addressCountry": "US"
+            },
+            "areaServed": [
+                {"@type": "City", "name": "Hatboro, PA"},
+                {"@type": "City", "name": "Doylestown, PA"},
+                {"@type": "City", "name": "Warrington, PA"},
+                {"@type": "AdministrativeArea", "name": "Bucks County, PA"},
+                {"@type": "AdministrativeArea", "name": "Montgomery County, PA"},
+                {"@type": "City", "name": "Philadelphia, PA"}
+            ],
+            "sameAs": [
+                "https://www.facebook.com/digitalonemarketingsolutions",
+                "https://www.linkedin.com/company/digitalonereviews/",
+                "https://www.instagram.com/digitalonereviews/",
+                "https://maps.app.goo.gl/KN1YRk26AeGGKsuQ9"
+            ]
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://digitalonereviews.com/#website",
+            "url": "https://digitalonereviews.com/",
+            "name": "Digital One Reviews",
+            "publisher": {
+                "@id": "https://digitalonereviews.com/#organization"
+            }
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://digitalonereviews.com/web-development.html",
+            "url": "https://digitalonereviews.com/web-development.html",
+            "name": "Restaurant Web Design & Development | Digital One Reviews",
+            "isPartOf": {
+                "@id": "https://digitalonereviews.com/#website"
+            }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://digitalonereviews.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Services",
+                    "item": "https://digitalonereviews.com/services.html"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Web Development",
+                    "item": "https://digitalonereviews.com/web-development.html"
+                }
+            ]
+        },
+        {
+            "@type": "Service",
+            "name": "Web Development",
+            "provider": {
+                "@id": "https://digitalonereviews.com/#organization"
+            }
+        },
+        {
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "How long does a website take?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Most local-business sites launch within 3–5 weeks, including design, content, photography coordination and testing."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Do you handle hosting and domains?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes — hosting, SSL certificates, domain management and ongoing updates can all be handled for you."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Will my site show up on Google?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Every build includes on-page SEO fundamentals: semantic structure, meta data, structured data and fast load times. Pair it with our local listings service for the strongest results."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can you redesign my existing website?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Absolutely. We can rebuild on a modern foundation while preserving your existing search rankings and content."
+                    }
+                }
+            ]
+        }
+    ]
   }
   </script>
 </head>
@@ -114,7 +227,7 @@
     <!-- Page hero -->
     <section class="hero hero--inner hero--photo" style="background-image:url('images/hero/inner/web-development.jpg')">
       <div class="container">
-        <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li><a href="review-management-services.html">Services</a></li><li aria-current="page">Web Development</li></ol></nav>
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li aria-current="page">Web Development</li></ol></nav>
         <span class="eyebrow">Service</span>
         <h1>Web Development</h1>
         <p class="hero-lede">Fast, secure, beautiful websites built to turn searchers into customers — designed, coded and launched by our team, and proven across dozens of local businesses.</p>
@@ -517,7 +630,7 @@
           <ul class="footer-contact">
             <li><i class="fa-solid fa-phone" aria-hidden="true"></i><a href="tel:+12674820275">(267) 482-0275</a></li>
             <li><i class="fa-solid fa-envelope" aria-hidden="true"></i><a href="mailto:reviews@digitaloneinc.com">reviews@digitaloneinc.com</a></li>
-            <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>Serving Bucks County, PA &amp; beyond</span></li>
+            <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>Hatboro, PA · Serving Bucks County &amp; beyond</span></li>
           </ul>
           <a class="btn btn--red" href="https://maps.app.goo.gl/KN1YRk26AeGGKsuQ9" target="_blank" rel="noopener" style="margin-top:1.3rem">
             <i class="fa-solid fa-star" aria-hidden="true"></i> Review Us on Google

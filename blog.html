@@ -5,25 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Primary SEO -->
-  <title>Blog – D1 Reviews</title>
-  <meta name="description" content="Practical articles on review management, reputation, local SEO, AI search and restaurant marketing — from Digital One Reviews.">
-  <meta name="keywords" content="reputation management blog, restaurant marketing blog, review tips, local SEO tips, AI restaurant search">
+  <title>Reputation & Local SEO Blog | Digital One Reviews</title>
+  <meta name="description" content="Practical articles on review management, reputation, local SEO, AI search and restaurant marketing — written for busy operators by Digital One Reviews.">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://digitalonereviews.com/blog.html">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Digital One Reviews">
-  <meta property="og:title" content="Blog – D1 Reviews">
-  <meta property="og:description" content="Practical articles on review management, reputation, local SEO, AI search and restaurant marketing — from Digital One Reviews.">
+  <meta property="og:title" content="Reputation & Local SEO Blog | Digital One Reviews">
+  <meta property="og:description" content="Practical articles on review management, reputation, local SEO, AI search and restaurant marketing — written for busy operators by Digital One Reviews.">
   <meta property="og:url" content="https://digitalonereviews.com/blog.html">
   <meta property="og:image" content="https://digitalonereviews.com/images/hero/og-cover.jpg">
   <meta property="og:locale" content="en_US">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Blog – D1 Reviews">
-  <meta name="twitter:description" content="Practical articles on review management, reputation, local SEO, AI search and restaurant marketing — from Digital One Reviews.">
+  <meta name="twitter:title" content="Reputation & Local SEO Blog | Digital One Reviews">
+  <meta name="twitter:description" content="Practical articles on review management, reputation, local SEO, AI search and restaurant marketing — written for busy operators by Digital One Reviews.">
   <meta name="twitter:image" content="https://digitalonereviews.com/images/hero/og-cover.jpg">
 
   <!-- Favicon -->
@@ -41,21 +40,85 @@
   <link rel="stylesheet" href="css/style.css?v=19">
   <link rel="stylesheet" href="css/responsive.css?v=19">
 
-  <!-- Schema.org LocalBusiness -->
+  <!-- Schema.org @graph -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Digital One Reviews",
-    "description": "Reputation management, review management, local listings, web development, video production and social media management for local businesses.",
-    "url": "https://digitalonereviews.com/blog.html",
-    "logo": "https://digitalonereviews.com/images/logo/D1-logo.png",
-    "image": "https://digitalonereviews.com/images/hero/og-cover.jpg",
-    "telephone": "+12674820275",
-    "email": "reviews@digitaloneinc.com",
-    "priceRange": "$$",
-    "areaServed": ["Hatboro PA", "Doylestown PA", "Warrington PA", "Bucks County PA", "Philadelphia PA"],
-    "sameAs": ["https://www.facebook.com/digitalonemarketingsolutions", "https://www.linkedin.com/company/digitalonereviews/", "https://www.instagram.com/digitalonereviews/", "https://maps.app.goo.gl/KN1YRk26AeGGKsuQ9"]
+    "@graph": [
+        {
+            "@type": "Organization",
+            "@id": "https://digitalonereviews.com/#organization",
+            "name": "Digital One Reviews",
+            "url": "https://digitalonereviews.com/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://digitalonereviews.com/images/logo/D1-logo.png"
+            },
+            "image": "https://digitalonereviews.com/images/hero/og-cover.jpg",
+            "telephone": "+12674820275",
+            "email": "reviews@digitaloneinc.com",
+            "foundingDate": "2017-09",
+            "founder": {
+                "@type": "Person",
+                "name": "FOUNDER_NAME_PLACEHOLDER"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Hatboro",
+                "addressRegion": "PA",
+                "addressCountry": "US"
+            },
+            "areaServed": [
+                {"@type": "City", "name": "Hatboro, PA"},
+                {"@type": "City", "name": "Doylestown, PA"},
+                {"@type": "City", "name": "Warrington, PA"},
+                {"@type": "AdministrativeArea", "name": "Bucks County, PA"},
+                {"@type": "AdministrativeArea", "name": "Montgomery County, PA"},
+                {"@type": "City", "name": "Philadelphia, PA"}
+            ],
+            "sameAs": [
+                "https://www.facebook.com/digitalonemarketingsolutions",
+                "https://www.linkedin.com/company/digitalonereviews/",
+                "https://www.instagram.com/digitalonereviews/",
+                "https://maps.app.goo.gl/KN1YRk26AeGGKsuQ9"
+            ]
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://digitalonereviews.com/#website",
+            "url": "https://digitalonereviews.com/",
+            "name": "Digital One Reviews",
+            "publisher": {
+                "@id": "https://digitalonereviews.com/#organization"
+            }
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://digitalonereviews.com/blog.html",
+            "url": "https://digitalonereviews.com/blog.html",
+            "name": "Reputation & Local SEO Blog | Digital One Reviews",
+            "isPartOf": {
+                "@id": "https://digitalonereviews.com/#website"
+            }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://digitalonereviews.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Blog",
+                    "item": "https://digitalonereviews.com/blog.html"
+                }
+            ]
+        }
+    ]
   }
   </script>
 </head>
@@ -323,7 +386,7 @@
           <ul class="footer-contact">
             <li><i class="fa-solid fa-phone" aria-hidden="true"></i><a href="tel:+12674820275">(267) 482-0275</a></li>
             <li><i class="fa-solid fa-envelope" aria-hidden="true"></i><a href="mailto:reviews@digitaloneinc.com">reviews@digitaloneinc.com</a></li>
-            <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>Serving Bucks County, PA &amp; beyond</span></li>
+            <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>Hatboro, PA · Serving Bucks County &amp; beyond</span></li>
           </ul>
           <a class="btn btn--red" href="https://maps.app.goo.gl/KN1YRk26AeGGKsuQ9" target="_blank" rel="noopener" style="margin-top:1.3rem">
             <i class="fa-solid fa-star" aria-hidden="true"></i> Review Us on Google
