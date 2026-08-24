@@ -5,25 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Primary SEO -->
-  <title>About Us – D1 Reviews</title>
-  <meta name="description" content="Passionate About Restaurants and Reputation. Digital One Reviews was founded by a marketing professional who saw firsthand how digital feedback could make or break a restaurant.">
-  <meta name="keywords" content="about Digital One, reputation management agency, restaurant marketing agency, Bucks County">
+  <title>About Digital One Reviews | Reputation & Marketing Agency, Bucks County PA</title>
+  <meta name="description" content="Founded in 2017 in Jamison, PA, Digital One Reviews helps restaurants, bars and local businesses across Bucks County and Northeast Philly take control of their online reputation.">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://digitalonereviews.com/about.html">
+  <meta name="google-site-verification" content="PLACEHOLDER">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Digital One Reviews">
-  <meta property="og:title" content="About Us – D1 Reviews">
-  <meta property="og:description" content="Passionate About Restaurants and Reputation. Digital One Reviews was founded by a marketing professional who saw firsthand how digital feedback could make or break a restaurant.">
+  <meta property="og:title" content="About Digital One Reviews | Reputation & Marketing Agency, Bucks County PA">
+  <meta property="og:description" content="Founded in 2017 in Jamison, PA, Digital One Reviews helps restaurants, bars and local businesses across Bucks County and Northeast Philly take control of their online reputation.">
   <meta property="og:url" content="https://digitalonereviews.com/about.html">
   <meta property="og:image" content="https://digitalonereviews.com/images/hero/og-cover.jpg">
   <meta property="og:locale" content="en_US">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="About Us – D1 Reviews">
-  <meta name="twitter:description" content="Passionate About Restaurants and Reputation. Digital One Reviews was founded by a marketing professional who saw firsthand how digital feedback could make or break a restaurant.">
+  <meta name="twitter:title" content="About Digital One Reviews | Reputation & Marketing Agency, Bucks County PA">
+  <meta name="twitter:description" content="Founded in 2017 in Jamison, PA, Digital One Reviews helps restaurants, bars and local businesses across Bucks County and Northeast Philly take control of their online reputation.">
   <meta name="twitter:image" content="https://digitalonereviews.com/images/hero/og-cover.jpg">
 
   <!-- Favicon -->
@@ -41,23 +41,82 @@
   <link rel="stylesheet" href="css/style.css?v=19">
   <link rel="stylesheet" href="css/responsive.css?v=19">
 
-  <!-- Schema.org LocalBusiness -->
+  <!-- Schema.org @graph -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Digital One Reviews",
-    "description": "Reputation management, review management, local listings, web development, video production and social media management for local businesses.",
-    "url": "https://digitalonereviews.com/about.html",
-    "logo": "https://digitalonereviews.com/images/logo/D1-logo.png",
-    "image": "https://digitalonereviews.com/images/hero/og-cover.jpg",
-    "telephone": "+12674820275",
-    "email": "reviews@digitaloneinc.com",
-    "priceRange": "$$",
-    "areaServed": ["Hatboro PA", "Doylestown PA", "Warrington PA", "Bucks County PA", "Philadelphia PA"],
-    "sameAs": ["https://www.facebook.com/digitalonemarketingsolutions", "https://www.linkedin.com/company/digitalonereviews/", "https://www.instagram.com/digitalonereviews/", "https://maps.app.goo.gl/KN1YRk26AeGGKsuQ9"]
+    "@graph": [
+      {
+        "@type": ["LocalBusiness", "ProfessionalService"],
+        "@id": "https://digitalonereviews.com/#organization",
+        "name": "Digital One Reviews",
+        "alternateName": "Digital One",
+        "url": "https://digitalonereviews.com/",
+        "logo": "https://digitalonereviews.com/images/logo/D1-logo-white.png",
+        "image": "https://digitalonereviews.com/images/hero/og-cover.jpg",
+        "telephone": "+1-267-482-0275",
+        "email": "reviews@digitaloneinc.com",
+        "foundingDate": "2017-09",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Jamison",
+          "addressRegion": "PA",
+          "postalCode": "18929",
+          "addressCountry": "US"
+        },
+        "areaServed": [
+          { "@type": "AdministrativeArea", "name": "Bucks County, PA" },
+          { "@type": "AdministrativeArea", "name": "Montgomery County, PA" },
+          { "@type": "Place", "name": "Northeast Philadelphia, PA" },
+          { "@type": "City", "name": "Doylestown" },
+          { "@type": "City", "name": "Jamison" },
+          { "@type": "City", "name": "New Hope" },
+          { "@type": "City", "name": "Warrington" },
+          { "@type": "City", "name": "Warminster" },
+          { "@type": "City", "name": "Hatboro" },
+          { "@type": "City", "name": "Horsham" },
+          { "@type": "City", "name": "North Wales" },
+          { "@type": "City", "name": "Newtown" }
+        ],
+        "priceRange": "$$",
+        "sameAs": [
+          "https://www.facebook.com/digitalonemarketingsolutions",
+          "https://www.linkedin.com/company/digitalonereviews/",
+          "https://www.instagram.com/digitalonereviews/",
+          "https://maps.app.goo.gl/KN1YRk26AeGGKsuQ9"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://digitalonereviews.com/#website",
+        "url": "https://digitalonereviews.com/",
+        "name": "Digital One Reviews",
+        "publisher": { "@id": "https://digitalonereviews.com/#organization" }
+      },
+      {
+        "@type": ["WebPage", "AboutPage"],
+        "@id": "https://digitalonereviews.com/about.html",
+        "url": "https://digitalonereviews.com/about.html",
+        "name": "About Digital One Reviews",
+        "isPartOf": { "@id": "https://digitalonereviews.com/#website" },
+        "about": { "@id": "https://digitalonereviews.com/#organization" },
+        "breadcrumb": { "@id": "https://digitalonereviews.com/about.html#breadcrumb" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://digitalonereviews.com/about.html#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://digitalonereviews.com/" },
+          { "@type": "ListItem", "position": 2, "name": "About Us" }
+        ]
+      }
+    ]
   }
   </script>
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
 </head>
 <body data-page="about">
 
@@ -68,28 +127,28 @@
   <header class="site-header header--onhero">
     <div class="header-inner">
 
-      <a class="brand" href="index.html" aria-label="Digital One Reviews — home">
+      <a class="brand" href="/" aria-label="Digital One Reviews — home">
         <img src="images/logo/D1-logo-white.png" alt="Digital One Reviews logo" width="146" height="40">
       </a>
 
       <nav aria-label="Primary navigation">
         <ul class="main-nav" id="main-nav">
-          <li><a href="index.html" >Home</a></li>
-          <li><a href="review-management-services.html" >Review Management</a></li>
+          <li><a href="/" >Home</a></li>
+          <li><a href="/review-management-services.html" >Review Management</a></li>
           <li class="has-dropdown">
-            <a href="services.html"  aria-haspopup="true">Services <span class="dropdown-caret" aria-hidden="true">▾</span></a>
+            <a href="/services.html"  aria-haspopup="true">Services <span class="dropdown-caret" aria-hidden="true">▾</span></a>
             <ul class="dropdown">
-              <li><a href="reputation-management.html">Reputation Management</a></li>
-              <li><a href="local-listings.html">Local Listings</a></li>
-              <li><a href="web-development.html">Web Development</a></li>
-              <li><a href="video-production.html">Video Production</a></li>
-              <li><a href="social-media-management.html">Social Media Management</a></li>
+              <li><a href="/reputation-management.html">Reputation Management</a></li>
+              <li><a href="/local-listings.html">Local Listings</a></li>
+              <li><a href="/web-development.html">Web Development</a></li>
+              <li><a href="/video-production.html">Video Production</a></li>
+              <li><a href="/social-media-management.html">Social Media Management</a></li>
             </ul>
           </li>
-          <li><a href="about.html" class="is-active" aria-current="page">About Us</a></li>
-          <li><a href="blog.html" >Blog</a></li>
-          <li><a href="review-stand.html" >Review Stand</a></li>
-          <li><a href="contact.html" >Contact Us</a></li>
+          <li><a href="/about.html" class="is-active" aria-current="page">About Us</a></li>
+          <li><a href="/blog.html" >Blog</a></li>
+          <li><a href="/review-stand.html" >Review Stand</a></li>
+          <li><a href="/contact.html" >Contact Us</a></li>
         </ul>
       </nav>
 
@@ -114,9 +173,9 @@
     <!-- Page hero -->
     <section class="hero hero--inner hero--photo" style="background-image:url('images/hero/inner/about.jpg')">
       <div class="container">
-        <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li aria-current="page">About Us</li></ol></nav>
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li aria-current="page">About Us</li></ol></nav>
         <span class="eyebrow">About Us</span>
-        <h1>Passionate about restaurants and reputation</h1>
+        <h1>About Digital One Reviews</h1>
         <p class="hero-lede">Digital One Reviews was founded by a marketing professional who saw firsthand how digital feedback could make or break a restaurant.</p>
       </div>
     </section>
@@ -174,10 +233,10 @@
           <div class="reveal-left">
             <span class="eyebrow">Meet The Team</span>
             <h2>Hands-on since 2017</h2>
-            <p>Digital One, a marketing agency, was launched in September 2017 with a focus on helping local businesses grow and stand out. With a strong understanding of the bar, restaurant, and hospitality industry, Digital One provides hands-on, results-driven marketing solutions tailored to each client.</p>
+            <p>Digital One, a marketing agency, was launched in September 2017 with a focus on helping local businesses grow and stand out. From our home base in Jamison, PA, we serve restaurants, bars and local businesses across Bucks County, Montgomery County and Northeast Philadelphia. With a strong understanding of the bar, restaurant, and hospitality industry, Digital One provides hands-on, results-driven marketing solutions tailored to each client.</p>
             <p>The company specializes in reputation and review management, Google Business Profile optimization, and creative content, helping businesses strengthen their online presence, build customer trust, and turn feedback into opportunities for growth.</p>
             <p style="font-weight:600;color:var(--navy)">We'd love to learn about your restaurant's story. Contact us to start a conversation.</p>
-            <a class="btn btn--red" href="contact.html" style="margin-top:.6rem">Contact Us</a>
+            <a class="btn btn--red" href="/contact.html" style="margin-top:.6rem">Contact Us</a>
           </div>
           <div class="reveal-right">
             <div class="timeline">
@@ -194,7 +253,7 @@
               <div class="timeline-item reveal">
                 <span class="year">TODAY</span>
                 <h3>The hospitality reputation partner</h3>
-                <p>Bars, restaurants and local businesses across Bucks County trust Digital One with their online presence.</p>
+                <p>Restaurants, bars and local businesses across Bucks County, Montgomery County and Northeast Philadelphia trust Digital One with their online presence.</p>
               </div>
             </div>
           </div>
@@ -211,7 +270,7 @@
             <p>A quick conversation with our team costs nothing — and you'll leave knowing exactly where your reputation stands.</p>
           </div>
           <div style="display:flex;gap:1rem;flex-wrap:wrap">
-            <a class="btn btn--light" href="contact.html">Contact Us</a>
+            <a class="btn btn--light" href="/contact.html">Contact Us</a>
             <a class="btn btn--ghost-light" href="tel:+12674820275"><i class="fa-solid fa-phone" aria-hidden="true"></i> (267) 482-0275</a>
           </div>
         </div>
@@ -237,33 +296,37 @@
         <nav aria-label="Quick links">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="review-stand.html">Review Stand</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/review-stand.html">Review Stand</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
           </ul>
         </nav>
 
         <nav aria-label="Services">
           <h4>Services</h4>
           <ul>
-            <li><a href="review-management-services.html">Review Management</a></li>
-            <li><a href="reputation-management.html">Reputation Management</a></li>
-            <li><a href="local-listings.html">Local Listings</a></li>
-            <li><a href="web-development.html">Web Development</a></li>
-            <li><a href="video-production.html">Video Production</a></li>
-            <li><a href="social-media-management.html">Social Media Management</a></li>
+            <li><a href="/review-management-services.html">Review Management</a></li>
+            <li><a href="/reputation-management.html">Reputation Management</a></li>
+            <li><a href="/local-listings.html">Local Listings</a></li>
+            <li><a href="/web-development.html">Web Development</a></li>
+            <li><a href="/video-production.html">Video Production</a></li>
+            <li><a href="/social-media-management.html">Social Media Management</a></li>
           </ul>
         </nav>
 
         <div>
           <h4>Get in Touch</h4>
-          <ul class="footer-contact">
-            <li><i class="fa-solid fa-phone" aria-hidden="true"></i><a href="tel:+12674820275">(267) 482-0275</a></li>
-            <li><i class="fa-solid fa-envelope" aria-hidden="true"></i><a href="mailto:reviews@digitaloneinc.com">reviews@digitaloneinc.com</a></li>
-            <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>Serving Bucks County, PA &amp; beyond</span></li>
-          </ul>
+          <address class="footer-contact" style="font-style:normal">
+            <ul>
+              <li><i class="fa-solid fa-building" aria-hidden="true"></i><span><strong>Digital One Reviews</strong></span></li>
+              <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>Jamison, PA 18929</span></li>
+              <li><i class="fa-solid fa-phone" aria-hidden="true"></i><a href="tel:+12674820275">(267) 482-0275</a></li>
+              <li><i class="fa-solid fa-envelope" aria-hidden="true"></i><a href="mailto:reviews@digitaloneinc.com">reviews@digitaloneinc.com</a></li>
+              <li><i class="fa-solid fa-map-location-dot" aria-hidden="true"></i><span>Serving Bucks County, Montgomery County and Northeast Philly</span></li>
+            </ul>
+          </address>
           <a class="btn btn--red" href="https://maps.app.goo.gl/KN1YRk26AeGGKsuQ9" target="_blank" rel="noopener" style="margin-top:1.3rem">
             <i class="fa-solid fa-star" aria-hidden="true"></i> Review Us on Google
           </a>
@@ -274,8 +337,8 @@
       <div class="footer-bottom">
         <p>&copy; <span id="year">2026</span> Digital One. All rights reserved.</p>
         <div class="footer-legal">
-          <a href="privacy-policy.html">Privacy Policy</a>
-          <a href="tos.html">Terms Of Service</a>
+          <a href="/privacy-policy.html">Privacy Policy</a>
+          <a href="/tos.html">Terms Of Service</a>
         </div>
       </div>
     </div>
